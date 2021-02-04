@@ -1,0 +1,16 @@
+pipeline{
+    agent any
+    stages{
+        stage("stage1"){
+            steps{
+                sh 'ls -ltrh'
+        }        
+            }
+        stage("stage2"){
+            steps{
+                echo "This is my second stage"
+            }    
+        }
+        
+    }
+}
